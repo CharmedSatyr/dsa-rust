@@ -1,3 +1,4 @@
+#[allow(dead_code)]
 pub fn f_loop(num: u32) -> u32 {
     let mut n = num.clone();
 
@@ -13,11 +14,10 @@ pub fn f_loop(num: u32) -> u32 {
     a
 }
 
-
-
 #[cfg(test)]
 mod tests {
-    use crate::fibonacci::f_loop;
+    use super::*;
+
     #[test]
     fn f_of_zero() {
         assert_eq!(f_loop(0), 0);

@@ -1,5 +1,7 @@
-mod fibonacci;
+// import the modules that need to be tested
+// allow dead code since main calls no fns
+pub mod fibonacci;
 
 fn main() {
-    fibonacci::f_loop(8);
+    println!("Run `cargo test` to see these modules in action!");
 }
